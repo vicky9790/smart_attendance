@@ -1,0 +1,60 @@
+/* Container */
+.student-container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fbfd;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;   /* ✅ evenly distribute columns */
+  word-wrap: break-word; /* ✅ wrap text properly */
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e0e6ed;
+  white-space: normal;   /* ✅ allow wrapping */
+}
+
+/* Header */
+.attendance-table thead {
+  background: #4a90e2;
+  color: #fff;
+}
+
+/* Status Colors */
+.present {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+.absent {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .attendance-table th,
+  .attendance-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .student-container h2 {
+    font-size: 20px;
+  }
+}

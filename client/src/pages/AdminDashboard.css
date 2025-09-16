@@ -1,0 +1,49 @@
+/* Make container fluid */
+.admin-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fbfd;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Attendance Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  table-layout: fixed;       /* 👈 Key: evenly distribute columns */
+  word-wrap: break-word;     /* 👈 Breaks long text */
+}
+
+.attendance-table th, 
+.attendance-table td {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #e0e6ed;
+  white-space: normal;       /* 👈 Allow wrapping */
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .attendance-table th, 
+  .attendance-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .admin-container h2 {
+    font-size: 20px;
+  }
+
+  .view-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
